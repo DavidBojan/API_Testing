@@ -18,7 +18,7 @@ def delete_order(token, id):
     headers = CaseInsensitiveDict()
     headers["Accept"] = "aplication/json"
     headers["Authorization"] = f"Bearer {token}"
-    response = requests.delete('https://simple-books-api.glitch.me/orders/{id}', headers=headers)
+    response = requests.delete(f'https://simple-books-api.glitch.me/orders/{id}', headers=headers)
     return response
 
 

@@ -14,7 +14,7 @@ def login(clientName=None, clientEmail=None):
 def get_token():
     nr = randint(1, 9999999)
     json = {
-        'clientName': 'Marin',
+        'clientName': 'Martin',
         'clientEmail': f'valid email{nr}@email.com'
     }
     response = requests.post("https://simple-books-api.glitch.me/api-clients/", json=json)
